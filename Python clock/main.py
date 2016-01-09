@@ -1,8 +1,9 @@
-__author__ = 'crazyacking'
 #encoding:utf8
 from sys import platform
 from os import system
 from time import sleep,localtime
+
+assert isinstance(pi,object )
 from math import sin,cos,pi
 
 clsCmd={'win32':'cls','linux2':'clear','linux':'clear'}[platform] #不同平台下的控制台清屏命令
@@ -10,7 +11,7 @@ infill=" "*2 # 背景填充字符
 width=39 #点阵宽度(这里将创建一个39x39的点阵)
 O=int((width-1)/2) #圆心
 r=width/2.0-1 # 半径
-drad=pi/180 #1°=pi/180 rad
+drad=pi/180 #1°=pi/180 rad@
 
 while True:
     matrix=[[infill for col in range(width)] for row in range(width)]
