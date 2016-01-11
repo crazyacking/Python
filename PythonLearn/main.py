@@ -421,4 +421,109 @@
 # print(d.keys())
 # print(d.values())
 
+# int = 1
+# double =3
+# if(int!=double):
+# 	print("Different")
+
+# x=y=[1,2,3]
+# z=[1,2,3]
+# print(x==y)
+# print(x==z)
+# print(x is y)
+# print(x is z)
+
+
+# age=10
+# assert 0<age<100
+# print("OK")
+# age=-1
+# assert 0<age<100,"age Must between 0 to 100"
+
+# output
+# Traceback (most recent call last):
+#   File "H:/Code_Fantasy/Python/PythonLearn/main.py", line 441, in <module>
+#     assert 0<age<100,"age Must between 0 to 100"
+# AssertionError: age Must between 0 to 100
+
+
+# x=1
+# while(x<=100):
+# 	print(x)
+# 	x+=1
+
+
+
+# words=["this","is","an","ex","parrot"]
+# for word in words:
+# 	print(word)
+
+# a=range(0,10)
+# print(a)
+# for num in a:
+# 	print(num)
+
+
+# range(0, 10)
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+
+# names=["Alice","Devin","Mary","Bob"]
+# ages=[1,2,3,4]
+# zip(names,ages)
+
+# word="dummy"
+# while word:
+# 	word=input("Please input word:")
+# 	print("The word was "+word)
+
+
+# from math import sqrt
+# for n in range(99,81,-1):
+# 	root=sqrt(n)
+# 	if root==int(root):
+# 		print(n)
+# 		break
+# else:
+# 	print("can't find it")
+
+
+# print([x for x in range(10)if x%3==0])
+#
+# print([(x,y) for x in range(3) for y in range(3)])
+
+
+# a=4
+# if a==1:
+# 	print(a)
+# elif a==2:
+# 	pass
+# else:
+# 	print(a*a)
+
+
+# a=input("please input your python code:\n")
+# exec (a)
+
+# please input your python code:
+# print("Hello World!")
+# Hello World!
+
+# a=input("please input your expression:\n")
+# b=eval(a)
+# print(b)
+
+# please input your expression:
+# 5+6+7
+# 18
+
+
 
