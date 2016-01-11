@@ -203,6 +203,222 @@
 
 
 
-x=[2,6,3,4]
-x.sort()
-print(x)
+# x=[2,6,3,4]
+# x.sort()
+# print(x)
+
+# x=[2,6,3,4]
+# y=sorted(x)
+# print(x)
+# print(y)
+
+# x=['aardvark','abalone','acme','add','aerate']
+# x.sort(key=len)
+# print(x)
+
+# x=(1,2,3)
+# print(x)
+
+# string='Hello'
+# tupl=tuple(string)
+# print(tupl)
+
+# string="Hello,%s. todday is %s"
+# values=("crazyacking","Friday")
+# print(string%values)
+
+
+# format="Pi with three decimals:%.3f"
+# from math import pi
+# print( format % pi)
+
+
+# from string import Template
+# s=Template("$x, nice $x!")
+# print(s.substitute(x='girl'))
+
+# from string import Template
+# s=Template("It's ${x}ful")
+# print(s.substitute(x="wonder"))
+
+# string=" %s plus %s equal %s" % (1,1,2)
+# print(string)
+
+
+# print("Price of eggs: $%d" %42)
+
+# print("Hexadeciaml price of eggs:%x" %42)
+
+
+# from math import pi
+# print("Pi is %.3f" %pi)
+
+# from math import pi
+# print("%10.3f" %pi)
+
+# from math import pi
+# print("%-10.2f" % pi)
+
+
+# print("%+d"%10+'\n' + "%+d"%-10)
+
+
+# width=int(input('Please enter width:'))
+# price_width=10
+# item_width=width-price_width
+# header_format='%-*s%*s'
+# format		 ='%-*s%*.2f'
+# print("="*width)
+# print(header_format%(item_width,'Item',price_width,'Price'))
+# print('-'*width)
+# print(format%(item_width,'Apples',price_width,0.4))
+# print(format%(item_width,'Pears',price_width,0.5))
+# print(format%(item_width,'Cantaloupes',price_width,1.93))
+# print(format%(item_width,'Dried Apricots(16 0z.)',price_width,9))
+# print(format%(item_width,'Prunes(4 1bs.',price_width,12))
+# print('='*width)
+
+
+
+
+# str='With a moo-moo here,and a moo-moo there'
+# print(str.find('moo'))
+
+# str='With a moo-moo here,and a moo-moo there'
+# print(str.find('moo',20,25))
+
+# seq='My name is Devin'
+# a=seq.split()
+# print(a)
+# b=''.join(seq)
+# print(b)
+# c='+'.join(seq)
+# print(c)
+
+
+# str="123ABCdef"
+# a=str.lower()
+# print(a)
+# b=str.upper()
+# print(b)
+
+# str="that's all,folks"
+# a=str.title()
+# print(a)
+# b=str.capitalize()
+# print(b)
+
+# str='This is a test'
+# a=str.replace('is','eez')
+# print(a)
+
+# str='         Hello World!        '
+# a=str.strip()
+# print(a)
+
+# phonebook={"Alice":"123","Beth":"234","Cecil":"345"}
+# print(phonebook["Alice"])
+# print(phonebook["Beth"])
+# print(phonebook["Cecil"])
+
+
+# items=[("name","Gumby"),("age",42)]
+# d=dict(items)
+# print(d)
+# print(d['name'])
+# print(d["age"])
+# del d["name"]
+
+#简单的key/value数据库
+# people={
+# 	"Alice":
+# 		{
+# 			"phone":"123",
+# 			"add":"Foo dirve 23"
+# 		},
+# 	"Beth":
+# 		{
+# 			"phone":"234",
+# 			"add":"Bar street 42"
+# 		},
+# 	"Cecil":
+# 		{
+# 			"phone":"345",
+# 			"add":"Baz avenue 90"
+# 		}
+# }
+#
+# labels={
+# 	"phone":"phone number",
+# 	"add":"address"
+# }
+#
+#
+# name=input("name:")
+# request=input("Please input Phone number(p) or address(a)?")
+#
+# if(request=='p'):key='phone'
+# elif(request=='a'):key='add'
+# if(name in people):
+# 	print("%s's %s is %s."% (name,labels[key],people[name][key]))
+
+# phonebook={"Alice":"123","Beth":"234","Cecil":"345"}
+# print("Cecil's phone is %(Cecil)s." %phonebook)
+
+
+# template=\
+# """<html>
+# <head><title>%(title)s</title></head>
+# <body>
+# <h1>%(title)s</h1>
+# <p>%(text)s</p>
+# </body>
+# """
+#
+# data={"title":"My Home Page","text":"Welcome to my home page!"}
+# print(template%data)
+
+
+# phonebook={"Alice":"123","Beth":"234","Cecil":["345","456","567"]}
+# y=phonebook.copy()
+# print(y)
+# y["Cecil"].remove("345")
+# print(y)
+# print(phonebook)
+
+# from copy import deepcopy
+# phonebook={"Alice":"123","Beth":"234","Cecil":["345","456","567"]}
+# y=deepcopy(phonebook)
+# print(y)
+# y["Cecil"].remove("345")
+# print(y)
+# print(phonebook)
+
+# d={}.fromkeys(['name','age'])
+# d=dict.fromkeys(['name','age'])
+# print(d)
+
+# d=dict.fromkeys(['name','age'],'unknown')
+# print(d)
+
+
+# phonebook={"Alice":"123","Beth":"234","Cecil":"345"}
+# print(phonebook["Devin"])
+
+# phonebook={"Alice":"123","Beth":"234","Cecil":"345"}
+# print(phonebook.get("Devin","N/A"))
+
+# d={"a":1,"b":2,"c":3,"d":4}
+# while(len(d)>0):
+# 	v=d.popitem()
+# 	print(v)
+
+# d={"Alice":"123","Beth":"234","Cecil":"345"}
+# print(d.setdefault("Devin","495"))
+# print(d)
+
+# d={"Alice":"123","Beth":"234","Cecil":"345","Devin":"123"}
+# print(d.keys())
+# print(d.values())
+
+
