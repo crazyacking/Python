@@ -605,3 +605,41 @@
 # print(database["last"].get("Cecil"))
 
 
+# def fun(name,num):
+# 	print("%s : %d"%(name,num))
+# na="Devin"
+# nu=22
+# fun(na,nu)
+# # fun(num,na)		# Error
+# fun(num=nu,name=na)	# Ok
+
+
+# def fun(name="crazyacking",num=33):
+# 	print("%s : %d"%(name,num))
+#
+# fun()	#crazyacking : 33	(default value)
+# fun(num=343,name="flsdjfklsd")	#flsdjfklsd : 343
+# fun(num=999)	#crazyacking : 999		(provide a part of value)
+
+
+# def store(data,*full_names):
+# 	for full_name in full_names:
+# 		names=full_name.split()
+# 		if(len(names)==2):
+# 			names.insert(1,"")		# zai direction 1 cha ru yi ge kong chuan
+# 		labels="first","middle","last"
+# 		for label,name in zip(labels,names):
+# 			people=lookup(data,label,name)
+# 			if people:
+# 				people.append(full_name)
+# 			else:
+# 				data[label][name]=[full_name]
+# def init(d):
+# 	d["first"]={}
+# 	d["middle"]={}
+# 	d["last"]={}
+#
+# d={}
+# init(d)
+# store(d,"Devin Jeason")
+
