@@ -643,3 +643,21 @@
 # init(d)
 # store(d,"Devin Jeason")
 
+# def factorinal(n):
+# 	if(n==1):
+# 		return 1
+# 	return n*factorinal(n-1)
+# print(factorinal(5))
+
+
+# def Binary_Search(squences,number,lower,upper):
+# 	mid=(lower+upper)/2
+# 	if(squences[mid]==number):
+# 		return mid
+# 	elif(squences[mid]>number):
+# 		lower=mid+1
+# 	else:
+# 		upper=mid
+# 	return Binary_Search(squences,number,lower,upper)
+#
+
