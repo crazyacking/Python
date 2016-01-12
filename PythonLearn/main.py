@@ -661,3 +661,13 @@
 # 	return Binary_Search(squences,number,lower,upper)
 #
 
+
+# def fun(a):
+# 	print(a)
+#
+# squ=[]
+# for i in range(20):
+# 	squ.append(i)
+# print(squ)
+
+
