@@ -525,5 +525,83 @@
 # 5+6+7
 # 18
 
+# from Tools.scripts.treesync import raw_input
+#
+# str1=raw_input("")
+# str2=raw_input("")
+# if(str1>str2):
+# 	print(">")
+# elif(str1==str2):
+# 	print("=")
+# elif(str1<str2):
+# 	print("<")
+
+# def hello(name):
+# 	return "Hello, "+name+"!"
+#
+# print(hello('crazyacking'))
+#
+#
+# def fibs(num):
+# 	result=[0,1]
+# 	for i in range(num-2):
+# 		result.append(result[-1]+result[-2])
+# 	return result
+# print(fibs(10))
+
+
+# def square(x):
+# 	'Calculates the square of the number x.'
+# 	return x*x
+# print(square(4))
+# print(square.__doc__)
+
+
+# def change(str):
+# 	str='Hello World!'
+# a="Devin"
+# change(a)
+# print(a)
+#
+#
+# def change(dic):
+# 	dic["Devin"]=122
+# d={"A":1,"B":2}
+# change(d)
+# print(d)
+
+
+# My_sister="Alice Bob Cecil"
+# database={}
+# database["first"]={}
+# database["middle"]={}
+# database["last"]={}
+# database["first"]["Alice"]=My_sister
+# database["middle"]["Bob"]=My_sister
+# database["last"]["Cecil"]=My_sister
+# print(database)
+
+
+# def init_database(data):
+# 	data["first"]={}
+# 	data["middle"]={}
+# 	data["last"]={}
+#
+# def insert(database,name_str):
+# 	a=name_str.split()
+# 	print(a)
+# 	database["first"][str(a[0])]=name_str
+# 	database["middle"][str(a[1])]=name_str
+# 	database["last"][str(a[2])]=name_str
+#
+# name="Alice Bob Cecil"
+# database={}
+# init_database(database)
+# print(database)
+# insert(database,name)
+# print(database)
+# print(database["first"].get("Alice"))
+# print(database["middle"].get("Bob"))
+# print(database["last"].get("Cecil"))
 
 
