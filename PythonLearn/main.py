@@ -875,6 +875,7 @@ b.eat()
 
 class SongBirds(Birds):
 	def __init__(self,str):
+		Birds.__init__(self)
 		self.sing=str
 	def song(self):
 		print(self.sing)
