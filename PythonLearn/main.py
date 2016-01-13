@@ -671,3 +671,96 @@
 # print(squ)
 
 
+# from random import choice
+# x=choice(["Hello World!",[1,2,'e','e',4]])
+# print(x)
+
+# __metaclass__=type
+# class Person:
+# 	def setName(self,name):
+# 		self.name=name
+#
+# 	def getName(self):
+# 		return self.name
+#
+# 	def greet(self):
+# 		print("Hello World! I'm %s."%self.name)
+#
+# a=Person()
+# a.setName("Devin")
+# name=a.getName()
+# print(name)
+# a.greet()
+
+
+# __metaclass__=type
+# class Bird:
+# 	song="jiu jiu jiu"
+# 	def sing(self):
+# 		print(self.song)
+# bird=Bird()
+# bird.sing()
+
+
+# class Secretive:
+# 	def __inaccessible(self):
+# 		print("Bet you can't see me ...")
+# 	def accessible(self):
+# 		self.__inaccessible()
+#
+# a=Secretive()
+# a.accessible()
+# a._Secretive__inaccessible()
+### a.__inaccessible()
+
+
+# class MemberCounter:
+# 	member=0
+# 	def init(self):
+# 		### MemberCounter.member+=1
+# 		self.member+=1
+#
+# m1=MemberCounter()
+# m1.init()
+# print(m1.member)
+# m2=MemberCounter()
+# m2.init()
+# print(m2.member)
+# print(m1.member)
+
+
+# class Filter:
+# 	def init(self):
+# 		self.blocked=[]
+# 	def filter(self,sequence):
+# 		return [x for x in sequence if x not in self.blocked]
+#
+# class SPAMFilter(Filter):
+# 	def init(self):
+# 		self.blocked=["SPAM"]
+#
+#
+# s=SPAMFilter()
+# s.init()
+# ret=s.filter(["SPAM","Afsdl","SPAM","HELD","SPAM","DEVIN"])
+# print(ret)
+#
+
+# __metaclass__=type
+# class Calculator:
+# 	def calculate(self,expression):
+# 		self.value=eval(expression)
+#
+# class Talker:
+# 	def talk(self):
+# 		print("Hi, My value is",self.value)
+#
+# class TalkingCalculator(Calculator,Talker):
+# 	pass
+#
+# tc=TalkingCalculator()
+# tc.calculate("4*5-1")
+# tc.talk()
+
+
+
