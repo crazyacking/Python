@@ -847,3 +847,38 @@
 # b=a.B()
 # b.fun1()
 
+
+# class FooBar:
+# 	def __init__(self,value):
+# 		self.somevar=value
+# 	def pt(self):
+# 		print(self.somevar)
+# 	def __del__(self):
+# 		del self.somevar
+# a=FooBar(456)
+# a.pt()
+
+class Birds:
+	def __init__(self):
+		self.hundry=True
+	def eat(self):
+		if(self.hundry):
+			print("Yaaaah...")
+			self.hundry=False
+		else:
+			print("No,Thanks~")
+
+b=Birds()
+b.eat()
+b.eat()
+b.eat()
+
+class SongBirds(Birds):
+	def __init__(self,str):
+		self.sing=str
+	def song(self):
+		print(self.sing)
+
+sb=SongBirds("Trankle Trankle little star..")
+sb.song()
+sb.eat()
