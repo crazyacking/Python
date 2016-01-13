@@ -329,7 +329,7 @@
 # print(d["age"])
 # del d["name"]
 
-#简单的key/value数据库
+# 简单的key/value数据库
 # people={
 # 	"Alice":
 # 		{
@@ -858,28 +858,86 @@
 # a=FooBar(456)
 # a.pt()
 
-class Birds:
-	def __init__(self):
-		self.hundry=True
-	def eat(self):
-		if(self.hundry):
-			print("Yaaaah...")
-			self.hundry=False
-		else:
-			print("No,Thanks~")
+# class Birds:
+# 	def __init__(self):
+# 		self.hundry = True
+#
+# 	def eat(self):
+# 		if (self.hundry):
+# 			print("Yaaaah...")
+# 			self.hundry = False
+# 		else:
+# 			print("No,Thanks~")
+#
+#
+# b = Birds()
+# b.eat()
+# b.eat()
+# b.eat()
+#
+#
+# class SongBirds(Birds):
+# 	# @ Override
+# 	def __init__(self, str):
+# 		Birds.__init__(self)
+# 		self.sing = str
+#
+# 	def song(self):
+# 		print(self.sing)
+#
+#
+# sb = SongBirds("Trankle Trankle little star..")
+# sb.song()
+# sb.eat()
 
-b=Birds()
-b.eat()
-b.eat()
-b.eat()
 
-class SongBirds(Birds):
-	def __init__(self,str):
-		Birds.__init__(self)
-		self.sing=str
-	def song(self):
-		print(self.sing)
+# __metaclass__=type
+# class Bird:
+# 	def __init__(self):
+# 		self.hungry=True
+# 	def eat(self):
+# 		if self.hungry:
+# 			print("Yaaaa...")
+# 			self.hungry=False
+# 		else:
+# 			print("No,Thanks~")
+#
+# class SongBird(Bird):
+# 	def __init__(self):
+# 		super(SongBird, self).__init__()
+# 		self.sound="jiu jiu jiu~"
+# 	def sing(self):
+# 		print(self.sound)
+#
+# sb=SongBird()
+# sb.sing()
+# sb.eat()
+# sb.eat()
+# sb.eat()
 
-sb=SongBirds("Trankle Trankle little star..")
-sb.song()
-sb.eat()
+
+# def checkIndex(key):
+# 	if not isinstance(key,(int,int)):
+# 		raise TypeError
+# 	if key<0:raise IndexError
+#
+# class ArithmticSequence:
+# 	def __init__(self,start=0,step=1):
+# 		self.start=start
+# 		self.step=step
+# 		self.changed={}
+# 	def __getitem__(self,key):
+# 		'Get an item from the arithmetic sequence'
+# 		checkIndex(key)
+# 		try:
+# 			return self.changed[key]
+# 		except KeyError:
+# 			return self.start+key*self.step
+# 	def __setitem__(self,key,value):
+# 		checkIndex(key)
+# 		self.changed[key]=value
+
+
+class CounterList(list):
+	def __init__(self,*args):
+		
