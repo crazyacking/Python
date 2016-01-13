@@ -764,3 +764,86 @@
 
 
 
+# try:
+# 	x=int(input("input x:"))
+# 	y=int(input("input y:"))
+# 	print(x/y)
+# except ZeroDivisionError:
+# 	print("The Second number can't be zero!")
+#
+
+
+# class MuffCalculator:
+# 	Muff=False
+# 	def calc(self,expr):
+# 		try:
+# 			return eval(expr)
+# 		except ZeroDivisionError:
+# 			if(self.Muff):
+# 				print("Division by zero is illegal!")
+# 			else:
+# 				raise
+#
+# a=MuffCalculator()
+# a.calc('10/0')
+
+
+# try:
+# 	x=int(input("input first number:"))
+# 	y=int(input("input second numger:"))
+# 	print(x/y)
+# except ZeroDivisionError:
+# 	print("Division can't be zero")
+# except TypeError:
+# 	print("input value type error")
+# except ValueError:
+# 	print("input value type error")
+
+
+# try:
+# 	x=int(input("input first number:"))
+# 	y=int(input("input second number:"))
+# 	print(x/y)
+# except(ZeroDivisionError,TypeError,ValueError):
+# 	print("Your input number are illegal!")
+
+
+# try:
+# 	x=int(input(""))
+# 	y=int(input(""))
+# 	print(x/y)
+# except(ZeroDivisionError,TypeError,ValueError) as e:
+# 	print(e)
+# print("Hello World!")
+
+# try:
+# 	x=int(input())
+# 	y=int(input())
+# 	print(x/y)
+# except Exception as e:
+# 	print(e)
+# else:
+# 	print("OK,Your input legal!")
+
+
+
+# while True:
+# 	try:
+# 		x=int(input("Please input first number:"))
+# 		y=int(input("Please input second number:"))
+# 		value=x/y
+# 		print("x/y is",value)
+# 	except Exception as e:
+# 		print(e," , Please try again!")
+# 	else:
+# 		break
+
+
+# class A:
+# 	class B:
+# 		def fun1(self):
+# 			print("Devin")
+# a=A()
+# b=a.B()
+# b.fun1()
+
