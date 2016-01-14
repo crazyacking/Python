@@ -938,6 +938,123 @@
 # 		self.changed[key]=value
 
 
-class CounterList(list):
-	def __init__(self,*args):
-		
+# class CounterList(list):
+# 	def __init__(self,*args):
+# 		super(CounterList,self).__init__(*args)
+# 		self.counter=0
+# 	def __getitem__(self,idx):
+# 		self.counter+=1
+# 		return super(CounterList,self).__getitem__(idx)
+#
+# a=CounterList(["a","b","c","d"])
+# print(a.__getitem__(1))
+
+
+# def func():
+# 	global x
+# 	print("x is",x)
+# 	x=2
+# 	print("change x to",x)
+# x=50
+# func()
+# print("now x is",x)
+#
+# import sys
+#
+# print("The command line arguments are:")
+#
+# print(sys.__stdout__)
+# print("\n\nThe PythonPath is\n",sys.path,"\n")
+#
+# print(dir())
+
+
+#!/usr/bin/python
+#coding:utf-8
+# Author: cijianzy
+# Created Time: 2015年06月14日 星期日 17时43分18秒
+
+# from uuid import uuid4
+# def get_key(num):
+#     key_list = [str(uuid4()) for i in range(num)]
+#     return key_list
+# print(get_key(200))
+
+
+# import os
+# import time
+# source=['/home/crazyacking/swaroop/byte','/home/crazyacking/swaroop/bin']
+# target_dir='/home/crazyacking/swaroop/bak/'
+# target=target_dir+time.strftime('%Y%m%d%H%M%S')+'.zip'
+# zip_command="zip -qr '%s' %s"%(target,' '.join(source))
+#
+# if os.system(zip_command)==0:
+# 	print "Successful backup to",target
+# else:
+# 	print "Backup FAILED!"
+
+# import os
+# import time
+#
+# source=['/home/crazyacking/swaroop/byte','/home/crazyacking/swaroop/bin']
+# target_dir='/home/crazyacking/swaroop/bin'
+# folder_name=time.strftime("%Y%m%d")
+# create_folder_command='mkdir '+folder_name
+# target_dir+=folder_name+'/'
+# print(target_dir)
+# backup_name=target_dir+time.strftime("%H_%M_%S%")+'.zip'
+#
+# zip_command="zip -qr '%s' %s"%(backup_name,' '.join(source))
+#
+# if os.system(zip_command)==0:
+# 	print("Successful backup to",backup_name)
+# else:
+# 	print("Backup FAILED!")
+#
+#
+
+
+
+
+# import os
+# import time
+#
+# source=['/home/crazyacking/swaroop/byte/','/home/crazyacking/swaroop/bin/']
+# target_dir='/home/crazyacking/swaroop/bak/'
+# folder_name=time.strftime("%Y%m%d")
+# create_folder_command='mkdir '+target_dir+folder_name
+# if not os.path.exists(target_dir+folder_name):
+# 	os.system(create_folder_command)
+#
+# print(create_folder_command)
+#
+# target_dir+=folder_name+'/'
+#
+# backup_name=target_dir+time.strftime("%H_%M_%S")+'.zip'
+#
+# zip_command="zip -qr '%s' %s"%(backup_name,' '.join(source))
+#
+# if os.system(zip_command)==0:
+# 	print("Successful backup to",backup_name)
+# else:
+# 	print("Backup FAILED!")
+
+
+
+# import os
+# import time
+#
+# source=['/home/crazyacking/swaroop/byte/','/home/crazyacking/swaroop/bin/']
+# target_dir='/home/crazyacking/swaroop/bak/'
+# folder_name=time.strftime("%Y%m%d")
+# create_folder_command='mkdir '+target_dir+folder_name
+# if not os.path.exists(target_dir+folder_name):
+# 	os.system(create_folder_command)
+# target_dir+=folder_name+'/'
+# backup_name=target_dir+time.strftime("%H_%M_%S")+'.zip'
+# zip_command="zip -qr '%s' %s"%(backup_name,' '.join(source))
+# if os.system(zip_command)==0:
+# 	print("Successful backup to",backup_name)
+# else:
+# 	print("Backup FAILED!")
+
